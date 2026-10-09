@@ -1,0 +1,134 @@
+[
+  {
+    "name": "desktop",
+    "route": "/",
+    "overflow": 0,
+    "header": 65,
+    "heroBottom": 900,
+    "viewport": 900
+  },
+  {
+    "name": "desktop",
+    "route": "/leistungen/",
+    "overflow": 0,
+    "header": 65,
+    "viewport": 900
+  },
+  {
+    "name": "desktop",
+    "route": "/akkreditierung/",
+    "overflow": 0,
+    "header": 65,
+    "viewport": 900
+  },
+  {
+    "name": "desktop",
+    "route": "/kontakt/",
+    "overflow": 0,
+    "header": 65,
+    "viewport": 900
+  },
+  {
+    "name": "desktop",
+    "route": "/impressum/",
+    "overflow": 0,
+    "header": 65,
+    "viewport": 900
+  },
+  {
+    "name": "desktop",
+    "route": "/datenschutz/",
+    "overflow": 0,
+    "header": 65,
+    "viewport": 900
+  },
+  {
+    "name": "mobile",
+    "route": "/",
+    "overflow": 0,
+    "header": 61,
+    "heroBottom": 844,
+    "viewport": 844
+  },
+  {
+    "name": "mobile",
+    "route": "/leistungen/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 844
+  },
+  {
+    "name": "mobile",
+    "route": "/akkreditierung/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 844
+  },
+  {
+    "name": "mobile",
+    "route": "/kontakt/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 844
+  },
+  {
+    "name": "mobile",
+    "route": "/impressum/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 844
+  },
+  {
+    "name": "mobile",
+    "route": "/datenschutz/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 844
+  },
+  {
+    "name": "small",
+    "route": "/",
+    "overflow": 0,
+    "header": 61,
+    "heroBottom": 760,
+    "viewport": 760
+  },
+  {
+    "name": "small",
+    "route": "/leistungen/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 760
+  },
+  {
+    "name": "small",
+    "route": "/akkreditierung/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 760
+  },
+  {
+    "name": "small",
+    "route": "/kontakt/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 760
+  },
+  {
+    "name": "small",
+    "route": "/impressum/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 760
+  },
+  {
+    "name": "small",
+    "route": "/datenschutz/",
+    "overflow": 0,
+    "header": 61,
+    "viewport": 760
+  },
+  {
+    "nojsNavigation": true
+  }
+]

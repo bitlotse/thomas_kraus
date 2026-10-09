@@ -1,0 +1,7 @@
+---
+layout: layouts/base.njk
+permalink: /einblicke/
+title: Einblicke
+description: "Einblicke in fachgerechte Probenahme, Vor-Ort-Messungen und die Dokumentation der Untersuchungsergebnisse."
+---
+<section class="th-page-intro"><div class="th-container"><p class="th-eyebrow">Unsere Arbeitsweise</p><h1>Eine Wasseranalyse beginnt nicht erst im Labor.</h1><div class="th-intro-text"><p>{{ original.servicesIntro[1] }}</p></div></div></section><section class="th-section"><div class="th-container th-detail-grid">{% for service in services %}{% if loop.index == 1 or loop.index == 5 or loop.index == 7 %}<article class="th-detail"><h2>{{ service.title }}</h2><p>{{ service.summary }}</p></article>{% endif %}{% endfor %}</div></section>{% include "partials/thomas-cta.njk" %}

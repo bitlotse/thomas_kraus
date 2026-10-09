@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+permalink: /leistungen/
+title: Leistungen
+description: "Probenahme, Trinkwasseruntersuchungen und Vor-Ort-Messungen von Thomas Kraus in Bayern."
+---
+<section class="th-page-intro"><div class="th-container"><p class="th-eyebrow">Leistungen</p><h1>Was wir machen</h1><div class="th-intro-text">{% for paragraph in original.servicesIntro %}<p>{{ paragraph }}</p>{% endfor %}</div></div></section>
+<section class="th-section"><div class="th-container"><h2>Unsere Leistungen im Überblick</h2><div class="th-detail-grid">{% for service in services %}<article class="th-detail" id="{{ service.key }}"><h3>{{ service.title }}</h3><p>{{ service.summary }}</p></article>{% endfor %}</div></div></section>
+{% include "partials/thomas-cta.njk" %}

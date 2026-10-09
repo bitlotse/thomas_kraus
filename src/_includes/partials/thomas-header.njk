@@ -1,0 +1,15 @@
+<header class="th-header" data-site-header>
+  <div class="th-container th-header__inner">
+    <a class="th-brand" href="/" aria-label="Thomas Kraus – Startseite">
+      <img src="/assets/images/homepage/thomas-kraus-logo.webp" width="2558" height="574" alt="Thomas Kraus Trinkwasser- und Hygieneuntersuchungen GmbH" fetchpriority="high">
+    </a>
+    <button class="th-nav-toggle" type="button" aria-expanded="false" aria-controls="th-navigation" data-nav-toggle>
+      <span class="th-nav-toggle__label">Menü</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="th-navigation" class="th-nav" aria-label="Hauptnavigation" data-navigation>
+      <ul>
+        {% for item in navigation.primary %}<li><a href="{{ item.url }}"{% if item.url == '/kontakt/' %} class="th-nav__contact"{% endif %}{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

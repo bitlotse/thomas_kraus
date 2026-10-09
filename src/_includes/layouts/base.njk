@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ site.language }}" class="no-js">
+<head>
+  {% include "partials/head.njk" %}
+</head>
+<body{% if thHome %} class="th-home-page"{% endif %}>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  {% if thHome %}{% include "partials/thomas-header.njk" %}{% else %}{% include "partials/header.njk" %}{% endif %}
+  <main id="main-content" tabindex="-1">
+    {{ content | safe }}
+  </main>
+  {% if thHome %}{% include "partials/thomas-footer.njk" %}{% else %}{% include "partials/footer.njk" %}{% endif %}
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

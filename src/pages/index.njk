@@ -1,0 +1,122 @@
+---
+layout: layouts/base.njk
+permalink: /
+title: Trinkwasser. Hygiene. Sicherheit.
+titleSuffix: Thomas Kraus Trinkwasser- und Hygieneuntersuchungen
+description: "Thomas Kraus Trinkwasser- und Hygieneuntersuchungen – Probenahme und Vor-Ort-Messungen für Wasser und Hygiene."
+canonical: https://probenahme-bayern.de/
+robots: noindex, nofollow
+ogImage: https://probenahme-bayern.de/assets/images/homepage/water-hero.webp
+thHome: true
+credentials:
+  - title: Akkreditierte Qualität
+    text: Nach DIN EN ISO/IEC 17025
+  - title: Zugelassene Untersuchungsstelle
+    text: Für Trinkwasser · LGL Bayern
+  - title: Qualifiziertes Fachpersonal
+    text: Für Probenahme und Vor-Ort-Messungen
+accreditation:
+  text: Qualität und Nachvollziehbarkeit sind wesentliche Bestandteile unserer Arbeit.
+  standard: DIN EN ISO/IEC 17025
+homeSchema:
+  "@context": https://schema.org
+  "@type": WebSite
+  name: Thomas Kraus Trinkwasser- und Hygieneuntersuchungen
+  url: https://probenahme-bayern.de/
+---
+<section class="th-hero" id="start" aria-labelledby="home-title">
+  <div class="th-container th-hero__grid">
+    <div class="th-hero__copy">
+      <h1 id="home-title">Trinkwasser.<br>Hygiene.<br>Sicherheit.</h1>
+      <h2>Ihr regionaler Partner für Trinkwasser- und Hygieneuntersuchungen</h2>
+      <p>Seit vielen Jahren unterstützen wir Unternehmen, Einrichtungen, Verwaltungen und Privatkunden mit Probenahmen und Untersuchungen rund um die Trinkwasserverordnung — pragmatisch, regional und ohne unnötiges Drumherum.</p>
+      <div class="th-actions">
+        <a class="th-button" href="/kontakt/">Kontakt</a>
+        <a class="th-button th-button--outline" href="/leistungen/">Leistungen</a>
+      </div>
+    </div>
+    <figure class="th-hero__visual">
+      <video data-hero-video muted loop playsinline preload="none" poster="/assets/images/homepage/water-hero.webp" aria-hidden="true">
+        <source data-src="/assets/images/homepage/hero_video.mp4" type="video/mp4">
+      </video>
+      <button class="th-hero__video-toggle" type="button" data-video-toggle data-paused="true" aria-label="Video abspielen" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="th-video-play" d="m8 5 11 7-11 7z"/>
+          <path class="th-video-pause" d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+        </svg>
+      </button>
+    </figure>
+  </div>
+</section>
+
+<section class="th-credentials" aria-label="Qualifikation und Zulassung">
+  <div class="th-container th-credentials__grid">
+    {% for credential in credentials %}
+    <div class="th-credential">
+      <span class="th-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-8"/></svg></span>
+      <p><strong>{{ credential.title }}</strong><span>{{ credential.text }}</span></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="th-section th-services" id="leistungen" aria-labelledby="services-title">
+  <div class="th-container">
+    <h2 id="services-title">Unsere Schwerpunkte:</h2>
+    <div class="th-service-grid">
+      <article class="th-service">
+        <svg class="th-service__icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M15 5h18v5l-2 3v10l10 16a4 4 0 0 1-3 6H10a4 4 0 0 1-3-6l10-16V13l-2-3z"/><path d="M12 34h24"/></svg>
+        <p>Akkreditierte Probenahme und Untersuchungen im Rahmen der Trinkwasserverordnung inklusive Legionellenuntersuchungen</p>
+      </article>
+      <article class="th-service">
+        <svg class="th-service__icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M5 13c5 0 5 4 10 4s5-4 10-4 5 4 10 4 5-4 8-4M5 23c5 0 5 4 10 4s5-4 10-4 5 4 10 4 5-4 8-4M5 33c5 0 5 4 10 4s5-4 10-4 5 4 10 4 5-4 8-4"/></svg>
+        <p>Akkreditierte Probenahme nach aktuellen Gesetzen und Normen von Schwimm- und Badebeckenwasser oder Kühlwasser</p>
+      </article>
+      <article class="th-service">
+        <svg class="th-service__icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M8 40V25h8v15M20 40V16h8v24M32 40V7h8v33z"/></svg>
+        <p>Akkreditierte Messung und Dokumentation von Vor-Ort-Parametern</p>
+      </article>
+      <article class="th-service">
+        <svg class="th-service__icon" aria-hidden="true" viewBox="0 0 48 48"><path d="M20 5h8l1 5a15 15 0 0 1 4 2l5-2 4 7-4 4a16 16 0 0 1 0 5l4 4-4 7-5-2a15 15 0 0 1-4 2l-1 5h-8l-1-5a15 15 0 0 1-4-2l-5 2-4-7 4-4a16 16 0 0 1 0-5l-4-4 4-7 5 2a15 15 0 0 1 4-2z"/><circle cx="24" cy="24" r="5"/></svg>
+        <p>Fachgerechte Hygieneuntersuchungen zur Eigenkontrolle von hygienerelevanten Geräten</p>
+      </article>
+    </div>
+    <div class="th-services__note">
+      <p>Weiterführende Laboranalytik erfolgt — je nach Untersuchungsumfang — in Zusammenarbeit mit akkreditierten Partnerlaboren.</p>
+      <p>Mehr dazu unter <a href="/leistungen/">Leistungen</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="th-accreditation" id="akkreditierung" aria-labelledby="accreditation-title">
+  <div class="th-container th-accreditation__inner">
+    <div class="th-accreditation__copy"><p class="th-eyebrow">DIN EN ISO/IEC 17025</p><h2 id="accreditation-title">Akkreditierung</h2><p>{{ accreditation.text }}</p><a class="th-text-link" href="/akkreditierung/">Mehr zur Akkreditierung <span aria-hidden="true">→</span></a></div>
+    {% include "partials/documents.njk" %}
+  </div>
+</section>
+
+<section class="th-region" aria-labelledby="region-title">
+  <div class="th-container th-region__grid">
+    <figure class="th-region__visual">
+      <img src="/assets/images/homepage/bavarian-region.webp" width="1536" height="1024" alt="Symbolbild einer bayerischen Berglandschaft an einem klaren See" loading="lazy">
+    </figure>
+    <div class="th-region__copy">
+      <h2 id="region-title">Regional unterwegs</h2>
+      <p>Wir arbeiten hauptsächlich in den Landkreisen Berchtesgadener Land, Traunstein, Rosenheim bis München.</p>
+      <p>Kurze Wege, feste Ansprechpartner und pragmatische Lösungen gehören bei uns dazu.</p>
+    </div>
+  </div>
+</section>
+
+<section class="th-contact" id="kontakt" aria-labelledby="contact-title">
+  <div class="th-container th-contact__grid">
+    <h2 id="contact-title">Kontakt</h2>
+    <address>
+      <strong>Thomas Kraus Trinkwasser- und Hygieneuntersuchungen GmbH</strong><br>
+      Dietzling 11, 83454 Anger<br>
+      Telefon: <a href="tel:+4986561625">08656-1625</a><br>
+      E-Mail: <a href="mailto:kraus@probenahme-bayern.de">kraus@probenahme-bayern.de</a>
+    </address>
+    <a class="th-button th-button--light" href="/kontakt/">Kontakt</a>
+  </div>
+</section>

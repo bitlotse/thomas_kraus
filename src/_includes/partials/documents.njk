@@ -1,0 +1,9 @@
+<div class="th-documents">
+{% for document in original.documents %}
+<a class="th-document-link" href="/assets/documents/{{ document.file }}" type="application/pdf" target="_blank" rel="noopener noreferrer">
+  <span class="th-document-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 3h11l6 6v20H8zM19 3v7h6M12 16h9M12 21h7"/></svg></span>
+  <span class="th-document-copy"><strong>{{ document.title }}</strong>{% if detailedDocuments %}<span class="th-document-description">{{ document.text }}</span>{% endif %}<small>{{ document.meta }} · öffnet in neuem Tab</small></span>
+  <svg class="th-document-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v12m-5-5 5 5 5-5M5 19v2h14v-2"/></svg>
+</a>
+{% endfor %}
+</div>

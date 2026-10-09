@@ -1,0 +1,30 @@
+{
+  "name": "agency-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kundenneutraler Eleventy-Starter für individuelle Websites lokaler Unternehmen.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "clean": "node -e \"require('fs').rmSync('output',{recursive:true,force:true})\"",
+    "build": "npm run clean && eleventy",
+    "build:production": "cross-env BUILD_CONTEXT=production npm run build",
+    "lint:js": "node --check .eleventy.js && node --check src/js/main.js && node --check scripts/validate-data.js && node --check scripts/validate-output.js && node --check scripts/serve-output.js",
+    "validate:data": "node scripts/validate-data.js",
+    "validate:data:production": "node scripts/validate-data.js --production",
+    "validate:output": "node scripts/validate-output.js",
+    "test:browser": "playwright test",
+    "check:deploy": "npm run build && npm run lint:js && npm run validate:data && npm run validate:output",
+    "check": "npm run check:deploy && npm run test:browser",
+    "check:production": "npm run validate:data:production && npm run build:production && npm run lint:js && cross-env BUILD_CONTEXT=production npm run validate:output && npm run test:browser"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "@axe-core/playwright": "4.10.2",
+    "@playwright/test": "1.61.1",
+    "cross-env": "7.0.3",
+    "image-size": "2.0.2"
+  },
+  "engines": {
+    "node": ">=20 <25"
+  }
+}

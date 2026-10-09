@@ -1,0 +1,15 @@
+<footer class="th-footer">
+  <div class="th-container th-footer__top">
+    <a class="th-footer__brand" href="/" aria-label="Thomas Kraus – Startseite">
+      <img src="/assets/images/homepage/thomas-kraus-logo.webp" width="2558" height="574" alt="Thomas Kraus Trinkwasser- und Hygieneuntersuchungen GmbH" loading="lazy">
+    </a>
+    <p>Probenahme und Vor-Ort-Messungen für Wasser und Hygiene.</p>
+    <nav aria-label="Rechtliche Informationen">
+      <ul>
+        <li><a href="/impressum/">Impressum</a></li>
+        <li><a href="/datenschutz/">Datenschutz</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="th-container th-footer__bottom"><span>{{ client.brand.tagline }}</span>{% if page.url == '/' %}<span>{{ original.credit.text }} <a href="{{ original.credit.url }}">{{ original.credit.name }}</a> erstellt.</span>{% endif %}</div>
+</footer>

@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+permalink: /kontakt/
+title: Kontakt
+description: "Kontakt zu Thomas Kraus Trinkwasser- und Hygieneuntersuchungen in Anger: Telefon, E-Mail und Anschrift."
+---
+<section class="th-page-intro"><div class="th-container"><p class="th-eyebrow">Wir sind für Sie da</p><h1>Kontakt</h1><div class="th-intro-text">{% for paragraph in original.contactIntro %}<p>{{ paragraph | safe }}</p>{% endfor %}</div></div></section>
+<section class="th-section"><div class="th-container th-contact-details"><div><h2>Thomas Kraus</h2><p>Trinkwasser- und Hygieneuntersuchungen GmbH</p><address>{{ client.address.street }}<br>{{ client.address.postalCode }} {{ client.address.locality }}</address></div><div class="th-contact-links"><a href="mailto:{{ client.contact.email }}"><span>E-Mail</span><strong>{{ client.contact.email }}</strong><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a href="tel:{{ client.contact.phoneInternational }}"><span>Telefon</span><strong>{{ client.contact.phoneDisplay }}</strong><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div></section>

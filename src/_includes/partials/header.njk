@@ -1,0 +1,19 @@
+<header class="site-header" data-site-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="{{ client.brand.name }} – Startseite">
+      <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36"><path d="M18 2 33 11v14L18 34 3 25V11Z" fill="currentColor"/><path d="m11 19 4 4 10-11" fill="none" stroke="white" stroke-width="3"/></svg>
+      <span>{{ client.brand.shortName }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+      <span class="nav-toggle__label">Menü</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Hauptnavigation" data-navigation>
+      <ul>
+        {% for item in navigation.primary %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <noscript><p class="no-js-note">JavaScript ist aus. Alle Seitenlinks bleiben unten vollständig verfügbar.</p></noscript>
+  </div>
+</header>

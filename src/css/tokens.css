@@ -1,0 +1,31 @@
+:root {
+  --color-ink: #172321;
+  --color-muted: #53615e;
+  --color-surface: #fffdf8;
+  --color-tint: #eef3ed;
+  --color-brand: #173f3a;
+  --color-brand-strong: #0d2d29;
+  --color-accent: #d98757;
+  --color-line: #c9d2ce;
+  --color-focus: #9b3f00;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --step--1: clamp(.86rem, .82rem + .18vw, .96rem);
+  --step-0: clamp(1rem, .96rem + .2vw, 1.12rem);
+  --step-1: clamp(1.25rem, 1.1rem + .7vw, 1.65rem);
+  --step-2: clamp(1.65rem, 1.35rem + 1.4vw, 2.45rem);
+  --step-3: clamp(2.25rem, 1.55rem + 3vw, 4.2rem);
+  --space-1: .5rem;
+  --space-2: .875rem;
+  --space-3: 1.25rem;
+  --space-4: 2rem;
+  --space-5: clamp(3rem, 7vw, 6.5rem);
+  --radius-sm: .5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+  --shadow-sm: 0 10px 30px rgb(23 63 58 / .09);
+  --duration-fast: 160ms;
+  --duration-normal: 280ms;
+  --ease: cubic-bezier(.2, .75, .25, 1);
+  --container: 74rem;
+}

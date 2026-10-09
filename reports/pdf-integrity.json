@@ -1,0 +1,17 @@
+[
+  {
+    "file": "D-PL-22360-01-00.pdf",
+    "sameAsSupplied": true,
+    "sha256": "49dd13759111ddbda1170dd768537e7a1e829adb009a04fa93941935d99f4fdd"
+  },
+  {
+    "file": "L-7.2_4-Flexi-Liste-Thomas-Kraus.pdf",
+    "sameAsSupplied": true,
+    "sha256": "ef5b37c8789489f10d7eb9c97ad3463be12e895427fef4d5d8efa382c03a7d39"
+  },
+  {
+    "file": "untersuchungsstellen_trinkwv.pdf",
+    "sameAsSupplied": true,
+    "sha256": "4aa57afe9924dcf559423f3d4e5aa48326a74ce4c5207cd8bcc442b1d1bcf64d"
+  }
+]

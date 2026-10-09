@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+permalink: /akkreditierung/
+title: Akkreditierung
+description: "Akkreditierung nach DIN EN ISO/IEC 17025: Urkunde, Flex-Liste und Bayerische Landesliste als PDF."
+---
+<section class="th-page-intro"><div class="th-container"><p class="th-eyebrow">Qualität & Nachvollziehbarkeit</p><h1>Akkreditierung</h1><div class="th-intro-text">{{ original.accreditationIntro[0] | safe }}</div></div></section>
+<section class="th-section"><div class="th-container th-editorial"><div><h2>Fachliche Kompetenz.<br>Dokumentiert.</h2></div><div class="th-prose">{% for paragraph in original.accreditationIntro %}{% if not loop.first %}<p>{{ paragraph | safe }}</p>{% endif %}{% endfor %}</div></div></section>
+<section class="th-doc-section"><div class="th-container"><h2>Dokumente zur Akkreditierung</h2>{% set detailedDocuments = true %}{% include "partials/documents.njk" %}<p class="th-document-note">{{ original.partnerNote }}</p></div></section>

@@ -1,0 +1,17 @@
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="eyebrow">{{ eyebrow or "Kundenneutrales Muster" }}</p>
+      <h1>{{ heading }}</h1>
+      <p class="lead">{{ intro }}</p>
+      {% if primaryCta %}<a class="button" href="{{ primaryCta.url }}">{{ primaryCta.label }}</a>{% endif %}
+      {% if secondaryCta %}<a class="button button--quiet" href="{{ secondaryCta.url }}">{{ secondaryCta.label }}</a>{% endif %}
+    </div>
+    {% if showVisual %}
+    <figure class="hero__visual">
+      <img src="/assets/images/placeholder-visual.svg" width="800" height="600" alt="Abstrakte geometrische Musterillustration" decoding="async" fetchpriority="high">
+      <figcaption class="sr-only">Platzhalter für eine kundenspezifische Bildsprache.</figcaption>
+    </figure>
+    {% endif %}
+  </div>
+</section>
