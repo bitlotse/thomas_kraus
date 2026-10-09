@@ -1,6 +1,6 @@
 # Netlify-Build-Reparatur – 2026-10-09
 
-Stand: lokale Prüfung vor dem Push auf `main`.
+Stand: lokale Prüfung und erster Live-Nachweis nach dem Push auf `main`.
 
 ## L0 – Ursache und Änderung
 
@@ -28,4 +28,8 @@ Stand: lokale Prüfung vor dem Push auf `main`.
 
 ## L3 – Live-Nachweis
 
-Vor dem Push noch nicht bestätigt. Lokale Checks beweisen keinen erfolgreichen Netlify-Deploy. Der gemeldete Netlify-Log war über das Web-Werkzeug nicht zugänglich; das Browser-Werkzeug konnte in dieser Sitzung nicht starten.
+Die erste Reparatur wurde als `d50a903` auf `main` gepusht. Danach antwortete `https://thomaskraus.netlify.app/` mit HTTP 200. Alle 31 Dateien im lokalen Output waren live erreichbar. PDF-, Bild- und Videodateien waren bytegleich; Textdateien unterscheiden sich unter anderem durch Plattform-Zeilenumbrüche, Sitemap-Reihenfolge und Netlifys injizierten Hosting-Kommentar/Toolbar. Robots erlaubt Crawling, die Homepage hat `index, follow`, die Sitemap enthält neun URLs und eine unbekannte Route liefert 404. Der Canonical-Host bleibt `https://probenahme-bayern.de`.
+
+Ein Live-Browsertest mit Playwright entdeckte, dass der echte CSP-Header das bisherige Inline-Script für die JavaScript-Erkennung blockiert. Dieses Script wurde anschließend in die vorhandene `src/js/main.js` verschoben. Die CSP wurde nicht abgeschwächt. Diese Korrektur muss nach dem zweiten Push live bestätigt werden.
+
+Netlify injiziert außerdem das öffentliche „Powered by Netlify“-Badge unter `/.netlify/scripts/hud?variant=public`, das zusätzliche CSP-Meldungen in seinem isolierten Frame auslöst. Laut [Netlify-Dokumentation](https://docs.netlify.com/manage/projects/powered-by-netlify-badge/) beeinträchtigt ein CSP-Block dieses Badges die Website nicht; ausschalten lässt es sich unter Project configuration > General > Powered by Netlify badge. Die Netlify-Dashboard-Einstellungen waren in dieser Sitzung nicht zugänglich. Der konkrete Published-Commit im Dashboard und die Custom-Domain-Verknüpfung sind nicht bestätigt. Eine echte Formularsendung wurde nicht vorgenommen.

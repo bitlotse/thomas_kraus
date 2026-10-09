@@ -1,4 +1,7 @@
 (() => {
+  document.documentElement.classList.remove("no-js");
+  document.documentElement.classList.add("js");
+
   const heroVideo = document.querySelector("[data-hero-video]");
   const videoToggle = document.querySelector("[data-video-toggle]");
   if (heroVideo && videoToggle) {
