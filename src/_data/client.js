@@ -1,5 +1,5 @@
 module.exports = {
-  "templateMode": true,
+  "templateMode": false,
   "brand": {
     "name": "Thomas Kraus Trinkwasser- und Hygieneuntersuchungen GmbH",
     "shortName": "Thomas Kraus",

@@ -12,13 +12,15 @@ npm.cmd run check
 npm.cmd start
 ```
 
-`check` baut und prüft den Starter im Template-Modus. Vor einem Preview werden zuerst alle `TODO_CLIENT`-Werte in `src/_data/client.js` bestätigt und dann ausgeführt:
+`check` baut und prüft die Website einschließlich der lokalen Browsertests. Vor einem Preview werden zuerst alle `TODO_CLIENT`-Werte in `src/_data/client.js` ersetzt und dann ausgeführt:
 
 ```powershell
 npm.cmd run check:production
 ```
 
-Dieser Production-Check scheitert absichtlich, solange Pflichtdaten, Canonical-Domain oder Rechtsverantwortung offen sind. Netlify verwendet genau dieses strenge Gate.
+Dieser Production-Check prüft technische Daten, Canonical-Domain und die erzeugte Website. Die internen Flags `client.legal.approved` und `client.templateMode` blockieren den Build nicht. `templateMode` steuert weiterhin Robots und strukturierte Daten; für diese Website steht es auf `false`. Eine fachliche Prüfung der Rechtstexte wird durch einen erfolgreichen Build nicht bestätigt.
+
+Netlify führt `npm ci && npm run check:deploy:production` aus: Produktionsdatenprüfung, Build, JavaScript-Syntaxprüfung und Output-Prüfung. `check:production` ergänzt lokal die Browsertests. Damit braucht der Netlify-Build keine zusätzliche Playwright-Browserinstallation.
 
 ## Neues Kundenprojekt starten
 

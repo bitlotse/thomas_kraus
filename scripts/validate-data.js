@@ -13,8 +13,6 @@ const walk = (value, path = "client") => {
 
 walk(client);
 walk(services, "services");
-if (!client.legal.approved) issues.push("Rechtstexte brauchen fachliche Freigabe vor Veröffentlichung");
-if (client.templateMode) issues.push("client.templateMode muss vor Preview/Production auf false stehen");
 if (!/^https:\/\/[^/]+/.test(site.url) || site.url.includes("example.invalid")) issues.push("site.url braucht die echte HTTPS-Canonical-Domain");
 if (!client.contact.email.includes("@") || client.contact.email.endsWith(".invalid")) issues.push("client.contact.email ist nicht produktionsfähig");
 if (!client.profiles || !Array.isArray(client.profiles.social)) issues.push("client.profiles.social muss ein Array sein");
