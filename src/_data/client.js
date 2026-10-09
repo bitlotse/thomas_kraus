@@ -34,7 +34,7 @@ module.exports = {
     "register": "HRB 31464, Amtsgericht Traunstein",
     "vatId": "DE359072948",
     "privacyContact": "Thomas Kraus Trinkwasser- und Hygieneuntersuchungen GmbH, Dietzling 11, 83454 Anger",
-    "approved": false
+    "approved": true
   },
   "profiles": {
     "googleBusiness": "",
